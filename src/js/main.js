@@ -41,7 +41,6 @@ fetch('data/segment.geojson')
     }
     
     const scaleFactor = 1/5
-    // const center = { x: 8746030, y: 1978415 }
 
     data.features.forEach(feature => {
       const coordinates = feature.geometry.coordinates[0]

@@ -8,15 +8,15 @@ importers:
 
   .:
     dependencies:
+      leaflet:
+        specifier: ^1.9.4
+        version: 1.9.4
       proj4:
         specifier: ^2.12.1
         version: 2.12.1
       three:
         specifier: ^0.168.0
         version: 0.168.0
-      three-geojson-loader:
-        specifier: ^1.0.0
-        version: 1.0.0(three@0.168.0)
       three-orbitcontrols:
         specifier: ^2.110.3
         version: 2.110.3(three@0.168.0)
@@ -257,6 +257,9 @@ packages:
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
 
+  leaflet@1.9.4:
+    resolution: {integrity: sha512-nxS1ynzJOmOlHp+iL3FyWqK89GtNL8U8rvlMOsQdTTssxZwCXh8N2NB3GDQOL+YR3XnWyZAxwQixURb+FA74PA==}
+
   mgrs@1.0.0:
     resolution: {integrity: sha512-awNbTOqCxK1DBGjalK3xqWIstBZgN6fxsMSiXLs9/spqWkF2pAhb2rrYCFSsr1/tT7PhcDGjZndG8SWYn0byYA==}
 
@@ -283,11 +286,6 @@ packages:
   source-map-js@1.2.1:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
     engines: {node: '>=0.10.0'}
-
-  three-geojson-loader@1.0.0:
-    resolution: {integrity: sha512-tAq1ZpA7qeEA7gr6JPVFujeBWxnykgBk86z9QTZVQ5nb/3OevZNMoVPURUtoynZf/IZeRaYoN6y0HyWYt6at6w==}
-    peerDependencies:
-      three: ^0.157.0
 
   three-orbitcontrols@2.110.3:
     resolution: {integrity: sha512-BNNbksJwbN3/MmT0X/gjz5ZCchm7bjk26SUdtJYRxfEYjDfkb/0PeUTHE/KuyJ5vb/owK3mojyy3vcqDx99sRA==}
@@ -485,6 +483,8 @@ snapshots:
   fsevents@2.3.3:
     optional: true
 
+  leaflet@1.9.4: {}
+
   mgrs@1.0.0: {}
 
   nanoid@3.3.7: {}
@@ -525,10 +525,6 @@ snapshots:
       fsevents: 2.3.3
 
   source-map-js@1.2.1: {}
-
-  three-geojson-loader@1.0.0(three@0.168.0):
-    dependencies:
-      three: 0.168.0
 
   three-orbitcontrols@2.110.3(three@0.168.0):
     dependencies:
