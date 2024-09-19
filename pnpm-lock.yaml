@@ -14,6 +14,12 @@ importers:
       three:
         specifier: ^0.168.0
         version: 0.168.0
+      three-geojson-loader:
+        specifier: ^1.0.0
+        version: 1.0.0(three@0.168.0)
+      three-orbitcontrols:
+        specifier: ^2.110.3
+        version: 2.110.3(three@0.168.0)
       vite:
         specifier: ^5.4.6
         version: 5.4.6
@@ -278,6 +284,20 @@ packages:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
     engines: {node: '>=0.10.0'}
 
+  three-geojson-loader@1.0.0:
+    resolution: {integrity: sha512-tAq1ZpA7qeEA7gr6JPVFujeBWxnykgBk86z9QTZVQ5nb/3OevZNMoVPURUtoynZf/IZeRaYoN6y0HyWYt6at6w==}
+    peerDependencies:
+      three: ^0.157.0
+
+  three-orbitcontrols@2.110.3:
+    resolution: {integrity: sha512-BNNbksJwbN3/MmT0X/gjz5ZCchm7bjk26SUdtJYRxfEYjDfkb/0PeUTHE/KuyJ5vb/owK3mojyy3vcqDx99sRA==}
+    deprecated: |
+      three-js exposes real modules now via three/examples/jsm/...
+      for example to import Orbit, do
+      import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
+    peerDependencies:
+      three: '>= 0.110.0'
+
   three@0.168.0:
     resolution: {integrity: sha512-6m6jXtDwMJEK/GGMbAOTSAmxNdzKvvBzgd7q8bE/7Tr6m7PaBh5kKLrN7faWtlglXbzj7sVba48Idwx+NRsZXw==}
 
@@ -505,6 +525,14 @@ snapshots:
       fsevents: 2.3.3
 
   source-map-js@1.2.1: {}
+
+  three-geojson-loader@1.0.0(three@0.168.0):
+    dependencies:
+      three: 0.168.0
+
+  three-orbitcontrols@2.110.3(three@0.168.0):
+    dependencies:
+      three: 0.168.0
 
   three@0.168.0: {}
 
